@@ -13,8 +13,15 @@ public final class Location {
     public Location(int locationID, String description, Map<String, Integer> exits) {
         this.locationID = locationID;
         this.description = description;
-        this.exits = new HashMap<>(exits);
-        exits.put("Q", 0);
+
+        if(exits!=null){
+            this.exits = new HashMap<>(exits);
+        }
+        else{
+            this.exits = new HashMap<String, Integer>();
+            exits.put("Q", 0);
+        }
+
     }
 //    public void addExit(String direction, int location, Map<String){
 //        exits.put(direction, location);
