@@ -18,10 +18,10 @@ public final class Location {
             this.exits = new HashMap<>(exits);
         }
         else{
-            this.exits = new HashMap<String, Integer>();
-            exits.put("Q", 0);
-        }
+            this.exits = new HashMap<>();
 
+        }
+        exits.put("Q", 0);
     }
 //    public void addExit(String direction, int location, Map<String){
 //        exits.put(direction, location);
