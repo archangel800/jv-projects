@@ -8,8 +8,9 @@ public class RandomQuoteServiceImpl implements RandomQuoteService{
 
     private final ChuckNorrisQuotes chuckNorrisQuotes;
 
-    public RandomQuoteServiceImpl(){
-        this.chuckNorrisQuotes = new ChuckNorrisQuotes();
+    public RandomQuoteServiceImpl(ChuckNorrisQuotes chuckNorrisQuotes){
+
+        this.chuckNorrisQuotes = chuckNorrisQuotes;
     }
 
     @Override
