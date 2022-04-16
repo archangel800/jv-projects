@@ -1,0 +1,4 @@
+com/dzidziguri/mapper/UserMapper.class
+com/dzidziguri/model/UserCommand.class
+com/dzidziguri/mapper/UserMapperImpl.class
+com/dzidziguri/domain/User.class
